@@ -47,9 +47,11 @@
         height: 100%;
         padding: 5px;
     }
-    .option:hover,
     .option.selected {
-        border: 2px solid aquamarine;
+        border: 2px solid rgba(127,255,212,0.5);
+    }
+    .option:hover {
+        border: 2px solid rgba(127,255,212,1);
     }
     .pane {
         margin-left: 1px;
