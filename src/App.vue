@@ -21,14 +21,14 @@
 
 <style>
     .app-list {
-        width: 80%;
+        padding: 50px;
         margin: 0 auto;
+        text-align: center;
     }
     .controls-container {
         display: inline-flex;
-        align-items: flex-end;
-        width: 100%;
     }
+
 </style>
 <script>
 

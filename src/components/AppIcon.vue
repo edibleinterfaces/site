@@ -6,36 +6,43 @@
             half: iconSize === 'half',
             quarter: iconSize === 'quarter'
         }"> 
-        <h1 class="app-icon-header">{{appName}}</h1>
-        <div class="app-icon-body"></div>
+        <div class="app-icon-body">
+            <h1 class="app-icon-header">{{appName}}</h1>
+        </div>
     </div>
 </template>
 
 <style>
+    .app-icon:nth-child(odd) {
+        background: whitesmoke;
+    }
+    .app-icon:nth-child(even) {
+        background: limegreen;
+    }
     .app-icon {
-        display: inline-block;
-        border: 1px solid black;
-        margin-left: -4px;
-            margin: 15px;
-        height: 200px;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        height: 0;
     }
     .app-icon-header {
-        font-size: 20%;
-            text-align: center;
+    }
+    .app-icon-body {
     }
     .app-icon-header,
     .app-icon-body {
-        display: block;
-        width: 100%;
     }
     .app-icon.full {
         width: 100%;
+        padding-bottom: 100%;
     }
     .app-icon.half {
         width: 50%;
+        padding-bottom: 50%;
     }
     .app-icon.quarter {
         width: 25%;
+        padding-bottom: 25%;
     }
 </style>
 

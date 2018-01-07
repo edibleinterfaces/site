@@ -35,8 +35,8 @@
 
 <style>
     .icon-size {
-        height: 40px;
-        width: 120px;
+        height: 50px;
+        width: 150px;
         background: whitesmoke;
         display: flex;
     }
