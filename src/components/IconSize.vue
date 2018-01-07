@@ -2,16 +2,16 @@
     <div class="icon-size">
         <div 
             class="option full"
-            v-bind:class="{selected: this.selection === 'full'}"
-            @click="select('full')">
+            v-bind:class="{selected: iconSize === 'full'}"
+            @click="setIconSize('full')">
             <div class="row">
                 <div class="pane"></div>
             </div>
         </div>
         <div 
             class="option half"
-            v-bind:class="{selected: this.selection === 'half'}"
-            @click="select('half')">
+            v-bind:class="{selected: iconSize === 'half'}"
+            @click="setIconSize('half')">
             <div class="row">
                 <div class="pane"></div>
                 <div class="pane"></div>
@@ -19,8 +19,8 @@
         </div>
         <div 
             class="option quarter"
-            v-bind:class="{selected: this.selection === 'quarter'}"
-            @click="select('quarter')">
+            v-bind:class="{selected: iconSize === 'quarter'}"
+            @click="setIconSize('quarter')">
             <div class="row">
                 <div class="pane"></div>
                 <div class="pane"></div>
@@ -89,14 +89,20 @@
     export default {
         name: 'IconSize',
         data: function() {
-            return {
-                selection: 'full',
-            };
+            return {};
         },
         methods: {
-            select(option) {
-                this.selection = option;
+            setIconSize(size) {
+                this.$store.dispatch('updateIconSize', size);
+            }
+        },
+        mounted: function() {
+            //console.log(this);
+        },
+        computed: {
+            iconSize() {
+               return this.$store.getters.iconSize;
             }
         }
-    }        
+    }
 </script>

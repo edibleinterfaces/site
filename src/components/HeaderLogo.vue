@@ -1,8 +1,8 @@
 <template>
     <div class="logo-container">
         <h1>{{title}}</h1>
+        <h2>{{subtitle}}</h2>
     </div>
-
 </template>
 
 <style>
@@ -15,7 +15,7 @@
 <script>
     export default {
         name: 'HeaderLogo',
-        props: ['title'],
+        props: ['title','subtitle'],
         data: function() {
             return {}
         }

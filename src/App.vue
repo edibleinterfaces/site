@@ -1,11 +1,11 @@
 <template>
     <div id="app">
         <HeaderLogo 
-            title="Edible Interfaces | a suite of delicious progressive Web Apps">
-        </HeaderLogo>
+            title="Edible Interfaces"
+            subtitle="a suite of delicious progressive Web Apps" />
         <div class="controls-container">
-            <AppFilter></AppFilter>
-            <IconSize selected="full"></IconSize>
+            <AppFilter />
+            <IconSize selected="full" />
         </div>
         <AppIcon app="no-task" />
         <AppIcon app="no-task" />

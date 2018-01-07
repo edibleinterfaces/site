@@ -1,0 +1,1 @@
+export const UPDATE_ICON_SIZE = 'UPDATE_ICON_SIZE'; 
