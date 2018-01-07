@@ -7,6 +7,7 @@
             <AppFilter />
             <IconSize selected="full" />
         </div>
+        <div class="app-list-menu"></div>
         <div class="app-list">
             <AppIcon app-name="no-task" />
             <AppIcon app-name="no-task" />
@@ -20,13 +21,23 @@
 </template>
 
 <style>
+    .app-list,
+    .app-list-menu {
+        width: 49%;
+        display:inline-block;
+    }
+    .app-list-menu {
+        height: 400px;
+            widt:49%;
+        background: lightyellow;
+    }
     .app-list {
         padding: 50px;
         margin: 0 auto;
         text-align: center;
     }
     .controls-container {
-        display: inline-flex;
+        width: 100%;
     }
 
 </style>

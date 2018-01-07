@@ -38,7 +38,7 @@
         height: 50px;
         width: 150px;
         background: whitesmoke;
-        display: flex;
+        display: inline-flex;
     }
     .option {
         border: 2px solid transparent;
