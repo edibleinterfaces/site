@@ -7,17 +7,23 @@
             <AppFilter />
             <IconSize selected="full" />
         </div>
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
-        <AppIcon app="no-task" />
+        <div class="app-list">
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+            <AppIcon app-name="no-task" />
+        </div>
     </div>
 </template>
 
 <style>
+    .app-list {
+        width: 80%;
+        margin: 0 auto;
+    }
     .controls-container {
         display: inline-flex;
         align-items: flex-end;
@@ -38,6 +44,11 @@
             AppIcon,
             IconSize,
             AppFilter
+        },
+        computed: {
+            iconSize() {
+                return this.$store.getters.iconSize;
+            }
         }
     }
 

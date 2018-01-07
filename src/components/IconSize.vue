@@ -10,7 +10,7 @@
         </div>
         <div 
             class="option half"
-            v-bind:class="{selected: iconSize === 'half'}"
+            v-bind:class="[{selected: iconSize === 'half'}]"
             @click="setIconSize('half')">
             <div class="row">
                 <div class="pane"></div>
@@ -89,7 +89,8 @@
     export default {
         name: 'IconSize',
         data: function() {
-            return {};
+            return {
+            };
         },
         methods: {
             setIconSize(size) {
