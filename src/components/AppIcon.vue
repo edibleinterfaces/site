@@ -25,7 +25,7 @@
 
 <script>
     export default {
-        props: ['app','height','width'],
+        props: ['app'],
         name: 'AppIcon',
         data: function() {
             return {}
