@@ -1,18 +1,26 @@
 <template>
     <div class="icon-size">
-        <div class="option full-size">
+        <div 
+            class="option full"
+            v-bind:class="{selected: this.selection === 'full'}"
+            @click="select('full')">
             <div class="row">
                 <div class="pane"></div>
             </div>
-                
         </div>
-        <div class="option half-size">
+        <div 
+            class="option half"
+            v-bind:class="{selected: this.selection === 'half'}"
+            @click="select('half')">
             <div class="row">
                 <div class="pane"></div>
                 <div class="pane"></div>
             </div>
         </div>
-        <div class="option quarter-size">
+        <div 
+            class="option quarter"
+            v-bind:class="{selected: this.selection === 'quarter'}"
+            @click="select('quarter')">
             <div class="row">
                 <div class="pane"></div>
                 <div class="pane"></div>
@@ -27,16 +35,21 @@
 
 <style>
     .icon-size {
-        height: 80px;
-        width: calc(240px);
+        height: 40px;
+        width: 120px;
         background: whitesmoke;
         display: flex;
     }
     .option {
+        border: 2px solid transparent;
         display: grid;
         width: 33.3333333%;
         height: 100%;
         padding: 5px;
+    }
+    .option:hover,
+    .option.selected {
+        border: 2px solid aquamarine;
     }
     .pane {
         margin-left: 1px;
@@ -46,25 +59,25 @@
     .icon-size .row {
         display: inline-flex;
     }
-    .icon-size > .full-size > .row,
-    .icon-size > .full-size > .row > .pane {
+    .icon-size > .full > .row,
+    .icon-size > .full > .row > .pane {
         width: 100%;
         height: 100%;
     }
-    .icon-size > .half-size > .row {
+    .icon-size > .half > .row {
         width: 100%;
         height: 100%;
     }
-    .icon-size > .half-size > .row > .pane {
+    .icon-size > .half > .row > .pane {
         width: 100%;
         height: 100%;
     }
-    .icon-size > .quarter-size > .row {
+    .icon-size > .quarter > .row {
         width: 100%;
         height: 100%;
         padding: 1px;
     }
-    .icon-size > .quarter-size > .row > .pane  {
+    .icon-size > .quarter > .row > .pane  {
         width: 50%;
         height: 100%;
     }
@@ -73,15 +86,15 @@
 <script>
     export default {
         name: 'IconSize',
-        props: ['full'],
         data: function() {
             return {
-                selectionOptions : [
-                    'full',
-                    'half',
-                    'quarter'
-                ]
-            }
+                selection: 'full',
+            };
         },
+        methods: {
+            select(option) {
+                this.selection = option;
+            }
+        }
     }        
 </script>

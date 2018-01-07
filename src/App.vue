@@ -7,7 +7,13 @@
             <AppFilter></AppFilter>
             <IconSize selected="full"></IconSize>
         </div>
-        <AppIcon></AppIcon>
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
+        <AppIcon app="no-task" />
     </div>
 </template>
 
