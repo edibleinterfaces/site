@@ -7,34 +7,21 @@
             <AppFilter />
             <IconSize selected="full" />
         </div>
-        <div class="app-list-menu"></div>
         <div class="app-list">
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
-            <AppIcon app-name="no-task" />
+			<AppIcon 
+                :img-src="app.imgSrc" 
+                v-for="app in apps"/>
         </div>
     </div>
 </template>
 
 <style>
-    .app-list,
-    .app-list-menu {
-        width: 49%;
-        display:inline-block;
-    }
-    .app-list-menu {
-        height: 400px;
-            widt:49%;
-        background: lightyellow;
-    }
     .app-list {
-        padding: 50px;
-        margin: 0 auto;
-        text-align: center;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -ms-flex-wrap: wrap;
+		  flex-wrap: wrap;
     }
     .controls-container {
         width: 100%;
@@ -49,6 +36,14 @@
     import AppFilter from './components/AppFilter';
 
     export default {
+        data: function() {
+            return {
+                apps: [
+                    { img: 'static/assets/img/bf.webp'},
+                    { img: 'static/assets/img/ca.png'},
+                ]
+            }; 
+        },
         name: 'app',
         components: {
             HeaderLogo,
