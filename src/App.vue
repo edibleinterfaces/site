@@ -39,8 +39,14 @@
         data: function() {
             return {
                 apps: [
-                    { img: 'static/assets/img/bf.webp'},
-                    { img: 'static/assets/img/ca.png'},
+                    { imgSrc: '/static/assets/img/1.png'},
+                    { imgSrc: '/static/assets/img/2.png'},
+                    { imgSrc: '/static/assets/img/3.png'},
+                    { imgSrc: '/static/assets/img/4.png'},
+                    { imgSrc: '/static/assets/img/5.png'},
+                    { imgSrc: '/static/assets/img/6.png'},
+                    { imgSrc: '/static/assets/img/7.png'},
+                    { imgSrc: '/static/assets/img/8.png'}
                 ]
             }; 
         },
