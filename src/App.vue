@@ -1,39 +1,24 @@
 <template>
     <div id="app">
-        <HeaderLogo 
-            title="Edible Interfaces"
-            subtitle="a suite of delicious progressive Web Apps" />
-        <div class="controls-container">
-            <AppFilter />
-            <IconSize selected="full" />
-        </div>
-        <div class="app-list">
-			<AppIcon 
-                :img-src="app.imgSrc" 
-                v-for="app in apps"/>
-        </div>
+        <HeaderLogo title="Edible Interfaces" subtitle="a suite of delicious progressive Web Apps" />
+        <AppList />
     </div>
 </template>
 
 <style>
-    .app-list {
-	  display: -webkit-box;
-	  display: -ms-flexbox;
-	  display: flex;
-	  -ms-flex-wrap: wrap;
-		  flex-wrap: wrap;
-    }
-    .controls-container {
-        width: 100%;
-    }
-
+html, body {
+    height: 100%;
+    width: 100%;
+}
+html, body, body * {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
 </style>
 <script>
 
-    import AppIcon from './components/AppIcon';
-    import IconSize from './components/IconSize';
     import HeaderLogo from './components/HeaderLogo';
-    import AppFilter from './components/AppFilter';
+    import { AppList } from './components/AppList';
 
     export default {
         data: function() {
@@ -48,14 +33,12 @@
                     { imgSrc: '/static/assets/img/7.png'},
                     { imgSrc: '/static/assets/img/8.png'}
                 ]
-            }; 
+            };
         },
         name: 'app',
         components: {
             HeaderLogo,
-            AppIcon,
-            IconSize,
-            AppFilter
+            AppList
         },
         computed: {
             iconSize() {
