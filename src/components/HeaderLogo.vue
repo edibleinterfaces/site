@@ -9,6 +9,7 @@
     .logo-container {
         width: 100%;
         text-align: left;
+        border: 20px solid white;
     }
 </style>
 

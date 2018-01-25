@@ -1,13 +1,16 @@
 <template>
     <div class="app-list">
         <div 
-            class="app-icon" 
+            class="app-icon border-sm" 
             v-for="(icon, index) in apps" 
             :style="{ 'background-image': 'url(' + icon.src + ')' }">
         </div>
     </div>
 </template>
 <style>
+    .border-sm {
+        border: 20px solid white; 
+    }
 	.app-icon {
 		height: 0;
 		font-family: sans-serif;
