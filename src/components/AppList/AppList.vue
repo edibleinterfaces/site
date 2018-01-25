@@ -54,6 +54,11 @@
         data: function() {
             return {
                 apps: [
+                    { src: '/static/assets/img/ei_notask.png'},
+                    { src: '/static/assets/img/ei_tempo.png'},
+                    { src: '/static/assets/img/dicetower.png'},
+                    { src: '/static/assets/img/1.png'},
+                    { src: '/static/assets/img/1.png'},
                     { src: '/static/assets/img/1.png'},
                     { src: '/static/assets/img/2.png'},
                     { src: '/static/assets/img/3.png'},
