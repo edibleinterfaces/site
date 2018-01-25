@@ -10,10 +10,10 @@
         margin-bottom: 20px;
         width: 100%;
         text-align: left;
+            padding: 20px;
     }
     .bg-banana {
-        background: #ffeb3b;
-            border: 20px solid #ffeb3b;
+            border-bottom: 2px solid #ffeb3b;
     }
     .logo-container h1 {
         font-weight: 100;
