@@ -30,9 +30,9 @@
 
 	@media (max-width: 700px) {
 		.app-icon {
+            flex-basis: calc(100%/3);
+            padding-bottom: calc(calc(100%/3) - 40px);
 			margin: 0;
-			flex-basis: 100%;
-			padding-bottom: 100%;
 		}
 	}
 	@media (min-width: 701px) {

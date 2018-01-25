@@ -1,5 +1,5 @@
 <template>
-    <div class="logo-container">
+    <div class="logo-container bg-banana">
         <h1>{{title}}</h1>
         <h2>{{subtitle}}</h2>
     </div>
@@ -7,9 +7,20 @@
 
 <style>
     .logo-container {
+        margin-bottom: 20px;
         width: 100%;
         text-align: left;
-        border: 20px solid white;
+    }
+    .bg-banana {
+        background: #ffeb3b;
+            border: 20px solid #ffeb3b;
+    }
+    .logo-container h1 {
+        font-weight: 100;
+    }
+    .logo-container h2 {
+        font-size: 1.7em;
+        font-weight: 100;
     }
 </style>
 
