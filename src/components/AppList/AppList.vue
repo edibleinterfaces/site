@@ -67,7 +67,7 @@
             return {
                 apps: [
                     { src: '/static/assets/img/ei_notask.png'},
-                    { src: '/static/assets/img/ei_tempo.png'},
+                    { src: '/static/assets/img/ei_tempo.svg'},
                     { src: '/static/assets/img/ei_game.svg'},
                     { src: '/static/assets/img/ei_readinglist.svg'},
                     { src: '/static/assets/img/1.png'},
