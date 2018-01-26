@@ -13,7 +13,7 @@
         padding: 20px;
     }
     .bg-banana {
-            border-bottom: 2px solid #ffeb3b;
+        border-bottom: 2px solid #ffeb3b;
     }
     .logo-container h1 {
         font-weight: 100;
@@ -24,7 +24,7 @@
     }
     @media (max-width: 400px) {
         .logo-container {
-            margin-bottom: 80px;
+            margin-bottom: 0px;
         }
     }
     @media (min-width: 1100px) {

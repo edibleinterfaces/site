@@ -66,19 +66,10 @@
         data: function() {
             return {
                 apps: [
-                    { src: '/static/assets/img/ei_notask.png'},
+                    { src: '/static/assets/img/ei_notask.svg'},
                     { src: '/static/assets/img/ei_tempo.svg'},
                     { src: '/static/assets/img/ei_game.svg'},
-                    { src: '/static/assets/img/ei_readinglist.svg'},
-                    { src: '/static/assets/img/1.png'},
-                    { src: '/static/assets/img/1.png'},
-                    { src: '/static/assets/img/2.png'},
-                    { src: '/static/assets/img/3.png'},
-                    { src: '/static/assets/img/4.png'},
-                    { src: '/static/assets/img/5.png'},
-                    { src: '/static/assets/img/6.png'},
-                    { src: '/static/assets/img/7.png'},
-                    { src: '/static/assets/img/8.png'}
+                    { src: '/static/assets/img/ei_readinglist.svg'}
                 ]
             };
         },
