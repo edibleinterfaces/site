@@ -1,5 +1,5 @@
 {
-  "name": "no-taskv2",
+  "name": "Edible Interfaces Main Site",
   "version": "1.0.0",
   "description": "An HTML5 tasklist that you can sync with the cloud.",
   "author": "Alex Ramsdell <alexramsdell@gmail.com>",
@@ -9,7 +9,8 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"
+    "test": "npm run unit",
+    "lint": "echo lint soon && exit 0"
   },
   "dependencies": {
     "date-fns": "^1.28.5",
