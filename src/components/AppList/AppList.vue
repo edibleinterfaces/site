@@ -1,10 +1,11 @@
 <template>
     <div class="app-list">
-        <div 
+        <a 
+            :href="`https://${app.name}.edibleinterfaces.com`" 
+            :style="{ 'background-image': 'url(' + app.src + ')' }"
             class="app-icon border"
-            v-for="(icon, index) in apps" 
-            :style="{ 'background-image': 'url(' + icon.src + ')' }">
-        </div>
+            v-for="(app, index) in apps">
+        </a>
     </div>
 </template>
 <style>
@@ -66,10 +67,10 @@
         data: function() {
             return {
                 apps: [
-                    { src: '/static/assets/img/ei_notask.svg'},
-                    { src: '/static/assets/img/ei_tempo.svg'},
-                    { src: '/static/assets/img/ei_game.svg'},
-                    { src: '/static/assets/img/ei_readinglist.svg'}
+                    { src: '/static/assets/img/ei_notask.svg', name: 'notask'},
+                    { src: '/static/assets/img/ei_tempo.svg', name: 'tempo'},
+                    { src: '/static/assets/img/ei_game.svg', name: 'gamelog'},
+                    { src: '/static/assets/img/ei_readinglist.svg', name: 'reading-list'}
                 ]
             };
         },
